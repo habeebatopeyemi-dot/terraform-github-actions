@@ -1,6 +1,6 @@
 terraform {
 backend "s3" {
-    bucket         = "harbybay-terraform-state-bucket" 
+    bucket         = "harbybah-terraform-state-bucket" 
     key            = "terraform-cicd/state.tfstate"
     region         = "us-east-1"
     encrypt        = true

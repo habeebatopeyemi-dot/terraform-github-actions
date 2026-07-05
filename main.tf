@@ -55,8 +55,8 @@ resource "aws_security_group" "my_security_group" {
 }
 
 resource "aws_instance" "EC2Instance" {
-  ami                    = "ami-0c7217cdde317cfec"
-  instance_type          = "t2.micro"
+  ami                    = "ami-06067086cf86c58e6"
+  instance_type          = "t3.micro"
   subnet_id              = aws_subnet.main.id
   vpc_security_group_ids = [aws_security_group.my_security_group.id]
 
